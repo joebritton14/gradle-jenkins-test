@@ -14,14 +14,19 @@ repositories {
 }
 
 dependencies {
+    implementation 'org.testng:testng:7.1.0'
+    implementation 'junit:junit:4.13.1'
     testImplementation 'org.junit.jupiter:junit-jupiter-api:5.8.2'
     testRuntimeOnly 'org.junit.jupiter:junit-jupiter-engine:5.8.2'
     implementation "joda-time:joda-time:2.10.13"
     testImplementation "junit:junit:4.13.2"
+    implementation 'org.seleniumhq.selenium:selenium-java:3.141.59'
+    implementation 'com.thegoate:testng:0.15.8.202201171722'
 }
 
 test {
     useJUnitPlatform()
+    useTestNG();
 }
 
 jar {
